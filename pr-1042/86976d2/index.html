@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#1042 界面预览 · 86976d2</title>
+<style>:root{color-scheme:light dark;--bg:#f6f6f7;--fg:#1d1d1f;--muted:#6e6e73;--card:#fff;--line:#e5e5ea}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--fg:#f2f2f4;--muted:#9a9aa0;--card:#1c1c1f;--line:#2c2c30}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 60px}h1{font-size:20px;margin:0 0 4px}.m{color:var(--muted);font-size:13px;margin:0 0 20px}
+video,img{display:block;width:100%;border-radius:10px;border:1px solid var(--line);background:var(--card)}figure{margin:0 0 28px}figcaption{color:var(--muted);font-size:13px;margin-top:8px}
+a{color:inherit}</style>
+<main><h1>#1042 界面预览</h1><p class="m">commit 86976d2 · <a href="https://github.com/yetone/magpie/pull/1042">回到 PR</a> · diff 只改 macOS 主窗口的原生标题栏：在 macOS 26 的设计下摘掉 Wails 用来内嵌红绿灯的空 NSToolbar，让窗口改用普通标题栏的圆角，同时把红绿灯位置、标题栏高度、sheet 起始位置和「另一 App 在前时首次按下可拖动窗口」的行为保留成原来工具栏的样子；页面的 HTML/CSS/JS 与状态没有变化。</p>
+
+<figure><img src="01-main-window-header.png" alt="主窗口顶部的页头：macOS 上红绿灯就嵌在这一条里"><figcaption>主窗口页头（macOS 上标题栏所在处） · 主窗口顶部的页头：macOS 上红绿灯就嵌在这一条里</figcaption></figure>
+<figure><img src="02-main-window-top.png" alt="主窗口打开时的画面（浏览器渲染，看不到原生窗口的圆角和红绿灯）"><figcaption>主窗口页头（macOS 上标题栏所在处） · 主窗口打开时的画面（浏览器渲染，看不到原生窗口的圆角和红绿灯）</figcaption></figure>
+</main></html>

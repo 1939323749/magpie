@@ -1,0 +1,29 @@
+{
+  "summary": "diff 只改 macOS 主窗口的原生标题栏：在 macOS 26 的设计下摘掉 Wails 用来内嵌红绿灯的空 NSToolbar，让窗口改用普通标题栏的圆角，同时把红绿灯位置、标题栏高度、sheet 起始位置和「另一 App 在前时首次按下可拖动窗口」的行为保留成原来工具栏的样子；页面的 HTML/CSS/JS 与状态没有变化。",
+  "scenes": [
+    {
+      "title": "主窗口页头（macOS 上标题栏所在处）",
+      "shots": [
+        {
+          "file": "01-main-window-header.png",
+          "caption": "主窗口顶部的页头：macOS 上红绿灯就嵌在这一条里",
+          "width": 2232
+        },
+        {
+          "file": "02-main-window-top.png",
+          "caption": "主窗口打开时的画面（浏览器渲染，看不到原生窗口的圆角和红绿灯）",
+          "width": 2560
+        }
+      ]
+    }
+  ],
+  "video": null,
+  "poster": null,
+  "errors": [],
+  "leak": false,
+  "skipped": null,
+  "mismatch": "",
+  "unseen": "录制在浏览器里以 1280x800 渲染页面，看不到任何原生窗口外观：窗口圆角大小、红绿灯的位置、标题栏高度、sheet 从何处开始，都无法在画面里看到；首次按下拖动窗口也是一次原生鼠标事件的差别，页面上不会留下痕迹。这一改动只在 macOS 26（且程序按 macOS 26 SDK 或更新 SDK 链接、Info.plist 未要求旧设计）上生效，链接旧 SDK 或系统更老时按 diff 仍保留工具栏，同样无法在沙箱里对比。页面本身没有对应的开关、按钮或新元素可以验证。",
+  "interactive": false,
+  "pages": 1
+}
